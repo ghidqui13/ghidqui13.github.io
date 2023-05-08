@@ -1,0 +1,70 @@
+:root{
+    --background-color: #69a5f3;
+    --primary-color: #ffffff;
+    --highlight-color: #dbb6b6;
+}
+*{
+    font-size: 16px;
+}
+body{
+    background-color: var(--background-color);
+    font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+    line-height: 2;
+    padding: 0;
+    margin: 0;
+}
+a{
+    color: var(--primary-color);
+    text-decoration: none;
+    padding: 10px;
+    transition: color 0.2s ease-in-out
+  }
+a:hover{
+    color: var(--highlight-color);
+}
+h2, h3{
+    font-family: 'Barlow Condensed', Arial, Helvetica, sans-serif;
+}
+  
+h2{
+    font-size: 2.5rem;
+    text-align: center;
+}
+  
+h3{
+    font-size: 1.5rem;
+    text-align: center;
+}
+/*
+Menu
+*/
+.Menu ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.Menu ul li{
+    animation-name: opening-logo;
+    animation-duration: 1.4s;
+    animation-timing-function: ease-in-out;
+}
+
+.Menu a{
+    font-family: 'barlow Condensed';
+    font-size: 1.7rem;
+
+    
+}
+
+.Menu .logo img{
+    animation-name: opening-logo;
+    animation-duration: 1.6s;
+    animation-timing-function: ease-in-out;
+    
+}
+.MenuMovil{
+    display: none;
+}
