@@ -6,65 +6,105 @@
         <link rel="stylesheet" href="Css/Media.css">
         <link rel="stylesheet" href="Css/timeLine.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/b5df52b289.js" crossorigin="anonymous"></script>
     </head>
+    <header>
+        <nav class="Menu">
+            <img src="img/Icono.png" alt="">
+            <ul> 
+                <li><a href="#Inicio">Inicio</a></li>
+                <li><a href="#Experiencia">Experiencia</a></li>
+                <li><a href="#SobreMi">Sobre mi</a></li>
+                <li><a href="#Contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <nav class="MenuMovil">
+            <article class="MenuMovil-open-close">
+                <header class="header">
+                    <a href="#" id="buttonOpenCloseMenu">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="100px" viewBox="0 0 24 24" width="15px" fill="#000000"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+                    </a>
+                </header>
+            <ul> 
+                <li><a href="#Inicio">Inicio</a></li>
+                <li><a href="#ExperienciaMovil">Experiencia</a></li>
+                <li><a href="#SobreMi">Sobre mi</a></li>
+                <li><a href="#Footer">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
     <body>
-        <header>
-            <nav class="Menu">
-                <img src="" alt="">
-                <ul> 
-                    <li><a href="#Inicio">Inicio</a></li>
-                    <li><a href="#Experiencia">Experiencia</a></li>
-                    <li><a href="#SobreMi">Sobre mi</a></li>
-                    <li><a href="#Footer">Contacto</a></li>
-                </ul>
-            </nav>
-            <nav class="MenuMovil">
-                <article class="MenuMovil-open-close">
-                    <header class="header">
-                        <a href="#" id="buttonOpenCloseMenu">
-                            <svg xmlns="http://www.w3.org/2000/svg" height="100px" viewBox="0 0 24 24" width="15px" fill="#000000"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
-                        </a>
-                    </header>
-                <ul> 
-                    <li><a href="#Inicio">Inicio</a></li>
-                    <li><a href="#ExperienciaMovil">Experiencia</a></li>
-                    <li><a href="#SobreMi">Sobre mi</a></li>
-                    <li><a href="#Footer">Contacto</a></li>
-                </ul>
-            </nav>
-        </header>
         <main>
             <section id="Inicio">
                 <article class="contenedor">
-                    
+                    <h2>Gabriel Hidalgo Quintero</h2>
+                    <h3>Desarrollador Multiplataforma</h3>
                 </article>
             </section>
             <section id="Experiencia">
                 <h3>Lenguajes que he aprendido</h3>
-                <article>
-                    <img src="img/HTML.png" alt="">
-                    <h4>HTML</h4>
-                </article>
-                <article>
-                    <img src="img/css.png" alt="">
-                    <h4>CSS</h4>
-                </article>
-                <article>
-                    <img src="img/js.png" alt="">
-                    <h4>JAVA</h4>
-                </article>
-                <article>
-                    <img src="img/sql.png" alt="">
-                    <h4>SQL</h4>
-                </article>
-            </section>
+                <p>Estos son los lenguajes que he aprendido en el tiempo que llevo estudiando</p>
+                <section class="experiencia_estructura">
+                    <article>
+                        <img src="img/HTML.png" alt="">
+                        <h4>HTML</h4>
+                    </article>
+                    <article>
+                        <img src="img/css.png" alt="">
+                        <h4>CSS</h4>
+                    </article>
+                    <article>
+                        <img src="img/js.png" alt="">
+                        <h4>JAVA</h4>
+                    </article>
+                    <article>
+                        <img src="img/sql.png" alt="">
+                        <h4>SQL</h4>
+                    </article>
+                </section>
+                </section>
             <section id="SobreMi">
+                <h2>Esperiencia laboral</h2>
+                <article>
+                    <h3>TecnoPhone</h3>
+                    <p>
+                        En esta empresa hice practicas durante 6 meses, esta empresa se encarga de arreglar moviles, ordenadore, plays, etc...
+                    </p>
+                </article>
+                <article>
+                    <h3>UniversoWeb</h3>
+                    <p>
+                        En esta empresa estube de practicas 8 meses de practicas y luego estube en verano trabajando en esta, como su nombre indica esta empresa se encarga de hacer paguinas web y aparate hace publicidad.
+                    </p>
+                </article>
             </section>
-            <script src="script/timeline.js"></script>
+            <section id="Contacto">
+                <h3>Contactame</h3>
+                <form action="">
+                    <input type="text" placeholder="Nombre">
+                    <input type="text" placeholder="Nº de teléfono (Añade prefijo si no es Español)">
+                    <input type="text" placeholder="Correo electrónico">
+                    <input type="text" placeholder="Asunto">
+                    <textarea name="Mensaje" cols="30" rows="8" placeholder="Mensaje"></textarea>
+                    <button onclick="SacarRatota()">Enviar Mensaje</button>
+                </form>
+                <article>
+                    <h4>Mi contacto</h4>
+                    <ul>
+                        <li><i class="fa-solid fa-location-dot"></i> Calle canteras bajas nuebas</li>
+                        <li><i class="fa-solid fa-mobile-button"></i>Numero: 688434592</li>
+                        <li><i class="fa-solid fa-envelope"></i>Correo: hidalgoquinterogabriel@gmail.com</li>
+                    </ul>
+                </article>
+            </section>
         </main>
-        <footer id="Footer">
-            <h4>Gabriel Hidalgo Quintero&copy;</h4>
-            <h4>Redes</h4>
-        </footer>
     </body>
+    <footer id="Footer">
+        <h4>Gabriel Hidalgo Quintero&copy;</h4>
+        <ul>
+            <li><a href=""><i class="fa-brands fa-twitter fa-xl"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-instagram fa-xl"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-github fa-xl"></i></a></li>
+        </ul>
+    </footer>
 </html>  

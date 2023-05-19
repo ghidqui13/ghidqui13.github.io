@@ -9,7 +9,6 @@
 body{
     background-color: var(--background-color);
     font-family: 'Work Sans', Arial, Helvetica, sans-serif;
-    line-height: 2;
     padding: 0;
     margin: 0;
 }
@@ -38,13 +37,23 @@ h3{
 /*
 Menu
 */
+.Menu{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #dbb6b6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 .Menu ul{
     list-style: none;
-    padding: 0;
+    padding-right: 2%;
     margin: 0;
     display: flex;
-    justify-content: center;
     gap: 30px;
+
 }
 .Menu ul li{
     animation-name: opening-logo;
@@ -56,12 +65,13 @@ Menu
     font-family: 'barlow Condensed';
     font-size: 1.7rem;
 }
-
-.Menu .logo img{
+.Menu img{
     animation-name: opening-logo;
     animation-duration: 1.6s;
     animation-timing-function: ease-in-out;
-    
+    height: 10%;
+    width: 10%;
+
 }
 /*
 Menu Movil
@@ -117,7 +127,7 @@ Menu Movil
 Inicio
 **/
 #Inicio{
-    background-color: var(--background-color);
+    margin-top: 6%;
 }
 /*
 Experiencia
@@ -125,18 +135,37 @@ Experiencia
 #Experiencia{
     background-color: var(--background-color);
 }
+#Experiencia section{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
 #Experiencia img{
-    height: 8%;
-    width: 8%;
+    height: 40%;
+    width: 40%;
 }
 /*
-SobreMi
+Contacto
 **/
-
+#Contacto{
+    display: flex;
+    padding: 3%;
+}
+#Contacto form{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
 /*
 Footer
 **/
 footer{
-    background-color: var(--background-color);
-    height: 450px;
+    background-color: bisque;
+    display: flex;
+    justify-content: space-between;
+}
+footer ul{
+    display: flex;
+    list-style: none;
 }
