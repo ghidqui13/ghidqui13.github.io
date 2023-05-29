@@ -1,110 +1,234 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Gabriel Hidalgo Quintero</title>
-        <link rel="stylesheet" href="Css/style.css">
-        <link rel="stylesheet" href="Css/Media.css">
-        <link rel="stylesheet" href="Css/timeLine.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="https://kit.fontawesome.com/b5df52b289.js" crossorigin="anonymous"></script>
-    </head>
-    <header>
-        <nav class="Menu">
-            <img src="img/Icono.png" alt="">
-            <ul> 
-                <li><a href="#Inicio">Inicio</a></li>
-                <li><a href="#Experiencia">Experiencia</a></li>
-                <li><a href="#SobreMi">Sobre mi</a></li>
-                <li><a href="#Contacto">Contacto</a></li>
-            </ul>
-        </nav>
-        <nav class="MenuMovil">
-            <article class="MenuMovil-open-close">
-                <header class="header">
-                    <a href="#" id="buttonOpenCloseMenu">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="100px" viewBox="0 0 24 24" width="15px" fill="#000000"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
-                    </a>
-                </header>
-            <ul> 
-                <li><a href="#Inicio">Inicio</a></li>
-                <li><a href="#ExperienciaMovil">Experiencia</a></li>
-                <li><a href="#SobreMi">Sobre mi</a></li>
-                <li><a href="#Footer">Contacto</a></li>
-            </ul>
-        </nav>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Gabriel Hidalgo Quintero</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="shortcut icon" href="img/Logo.png" type="image/x-icon">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <header class="contenedor-header">
+        <article>
+            <h1 class="logo">
+                <a href="#">GHQ</a>
+            </h1>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">APRENDIZAJE</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <a class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+        </article>
     </header>
-    <body>
-        <main>
-            <section id="Inicio">
-                <article class="contenedor">
-                    <h2>Gabriel Hidalgo Quintero</h2>
-                    <h3>Desarrollador Multiplataforma</h3>
-                </article>
-            </section>
-            <section id="Experiencia">
-                <h3>Lenguajes que he aprendido</h3>
-                <p>Estos son los lenguajes que he aprendido en el tiempo que llevo estudiando</p>
-                <section class="experiencia_estructura">
-                    <article>
-                        <img src="img/HTML.png" alt="">
-                        <h4>HTML</h4>
-                    </article>
-                    <article>
-                        <img src="img/css.png" alt="">
-                        <h4>CSS</h4>
-                    </article>
-                    <article>
-                        <img src="img/js.png" alt="">
-                        <h4>JAVA</h4>
-                    </article>
-                    <article>
-                        <img src="img/sql.png" alt="">
-                        <h4>SQL</h4>
-                    </article>
-                </section>
-                </section>
-            <section id="SobreMi">
-                <h2>Esperiencia laboral</h2>
-                <article>
-                    <h3>TecnoPhone</h3>
-                    <p>
-                        En esta empresa hice practicas durante 6 meses, esta empresa se encarga de arreglar moviles, ordenadore, plays, etc... qeeqeeq
-                    </p>
-                </article>
-                <article>
-                    <h3>UniversoWeb</h3>
-                    <p>
-                        En esta empresa estube de practicas 8 meses de practicas y luego estube en verano trabajando en esta, como su nombre indica esta empresa se encarga de hacer paguinas web y aparate hace publicidad.
-                    </p>
-                </article>
-            </section>
-            <section id="Contacto">
-                <h3>Contactame</h3>
-                <form action="">
-                    <input type="text" placeholder="Nombre">
-                    <input type="text" placeholder="Nº de teléfono (Añade prefijo si no es Español)">
-                    <input type="text" placeholder="Correo electrónico">
-                    <input type="text" placeholder="Asunto">
-                    <textarea name="Mensaje" cols="30" rows="8" placeholder="Mensaje"></textarea>
-                    <button onclick="SacarRatota()">Enviar Mensaje</button>
-                </form>
-                <article>
-                    <h4>Mi contacto</h4>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <article class="contenido-banner">
+            <figure class="contenedor-img">
+                <img src="img/hero.png" alt="">
+            </figure>
+            <h1>Gabriel Hidalgo</h1>
+            <h2>Desarrollador Multiplataforma</h2>
+            <ul class="redes">
+                <li><a href="https://twitter.com/gabhiq_13" target="_blank"><i class="fa-brands fa-twitter fa-xl"></i></a></li>
+                <li><a href="https://www.instagram.com/gabi_hq13/" target="_blank"><i class="fa-brands fa-instagram fa-xl"></i></a></li>
+                <li><a href="https://github.com/ghidqui13" target="_blank"><i class="fa-brands fa-github fa-xl"></i></a></li>
+            </ul>
+        </article>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <article class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Nick Perez.</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam unde soluta minima necessitatibus, voluptas consectetur vero officiis quas, explicabo deleniti repellendus aliquid debitis maiores numquam voluptate reprehenderit in delectus dolores.</p>
+
+            <article class="fila">
+                <!-- datos personales -->
+                <article class="col">
+                    <h3>Datos Personales</h3>
                     <ul>
-                        <li><i class="fa-solid fa-location-dot"></i> Calle canteras bajas nuebas</li>
-                        <li><i class="fa-solid fa-mobile-button"></i>Numero: 688434592</li>
-                        <li><i class="fa-solid fa-envelope"></i>Correo: hidalgoquinterogabriel@gmail.com</li>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            13/12/2002
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            688434592
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            hidalgoquinterogabriel@gmail.com
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            ghidqui13.github.io
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Canteras Bajas nuevas, Vélez-Málaga
+                        </li>
                     </ul>
                 </article>
-            </section>
-        </main>
-    </body>
-    <footer id="Footer">
-        <h4>Gabriel Hidalgo Quintero&copy;</h4>
-        <ul>
-            <li><a href=""><i class="fa-brands fa-twitter fa-xl"></i></a></li>
-            <li><a href=""><i class="fa-brands fa-instagram fa-xl"></i></a></li>
-            <li><a href=""><i class="fa-brands fa-github fa-xl"></i></a></li>
+ 
+            </article>
+        </article>
+    </section>
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <article class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <article class="fila">
+                <h3>Educación</h3>
+                <article class="col izquierda">
+                   
+                    <article class="item izq">
+                        <h4>Grado Medio SMR</h4>
+                        <span class="casa">IES Juan de la Cierva</span>
+                        <span class="fecha">2020-2022</span>
+                        <p>En este grado estudie lo basico de informatica, entre ello sobre los sistemas operativos, y desarroyo web una de las cosas de las que me llevo ha estudiar el grado superior</p>
+                        <article class="conectori">
+                            <article class="circuloi"></article>
+                        </article>
+                    </article>
+                    <article class="item izq">
+                        <h4>Grado Superior DAM</h4>
+                        <span class="casa">IES Politécnico Hermenegildo Lanz</span>
+                        <span class="fecha">2022-2024</span>
+                        <p>En este grado he aprendido vastante mas sobre desarroyo web pero sobre todo de aplicaciones con java que es el principal lenguaje que estado aprendiendo</p>
+                        <article class="conectori">
+                            <article class="circuloi"></article>
+                        </article>
+                    </article>
+                </article>
+                <h3>Experiencia de trabajo</h3>
+                <article class="col izquierda">
+                    <article class="item izq">
+                        <h4>TecnoPhone</h4>
+                        <span class="casa">Vélez-Málaga</span>
+                        <span class="fecha">2021</span>
+                        <p>En esta empresa hice practicas durante 6 meses, esta empresa se encarga de arreglar moviles, ordenadore, plays, etc..</p>
+                        <article class="conectori">
+                            <article class="circuloi"></article>
+                        </article>
+                    </article>
+                    <article class="item izq">
+                        <h4>Universo Web</h4>
+                        <span class="casa">Torre del Mar</span>
+                        <span class="fecha">2021-2022</span>
+                        <p>En esta empresa estube de practicas 8 meses de practicas y luego estube en verano trabajando en esta, como su nombre indica esta empresa se encarga de hacer paguinas web y aparate hace publicidad.</p>
+                        <article class="conectori">
+                            <article class="circuloi"></article>
+                        </article>
+                    </article>
+                </article>
+            </article>
+        </article>
+    </section>
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <article class="contenido-seccion">
+            <h2>Aprendizaje</h2>
+            <article class="fila">
+                <!-- Technical Skill -->
+                <article class="col">
+                    <h3>Lenguajes aprendidos</h3>
+                    <article class="skill">
+                        <span>Javascript</span>
+                        <article class="barra-skill">
+                            <article class="progreso">
+                                <span>45%</span>
+                            </article>
+                        </article>
+                    </article>
+                    <article class="skill">
+                        <span>HTML & CSS</span>
+                        <article class="barra-skill">
+                            <article class="progreso">
+                                <span>90%</span>
+                            </article>
+                        </article>
+                    </article>
+                    <article class="skill">
+                        <span>Photoshop</span>
+                        <article class="barra-skill">
+                            <article class="progreso">
+                                <span>85%</span>
+                            </article>
+                        </article>
+                    </article>
+                    <article class="skill">
+                        <span>Java</span>
+                        <article class="barra-skill">
+                            <article class="progreso">
+                                <span>70%</span>
+                            </article>
+                        </article>
+                    </article>
+                    <article class="skill">
+                        <span>SQL</span>
+                        <article class="barra-skill">
+                            <article class="progreso">
+                                <span>56%</span>
+                            </article>
+                        </article>
+                    </article>
+                </article>
+            </article>
+        </article>
+    </section>
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <article class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <article class="fila">
+                <!-- Formulario -->
+                <article class="col">
+                    <input type="text" placeholder="Dirección de correo">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje
+                        <span class="overlay"></span>
+                    </button>
+                </article>
+                <!-- Mapa -->
+                
+            </article>
+        </article>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <ul class="redes">
+            <li><a href="https://twitter.com/gabhiq_13" target="_blank"><i class="fa-brands fa-twitter fa-xl"></i></a></li>
+            <li><a href="https://www.instagram.com/gabi_hq13/" target="_blank"><i class="fa-brands fa-instagram fa-xl"></i></a></li>
+            <li><a href="https://github.com/ghidqui13" target="_blank"><i class="fa-brands fa-github fa-xl"></i></a></li>
         </ul>
+        <article class="col">
+                    
+            <article class="info">
+                <ul>
+                    <li><i class="fa-solid fa-location-dot"></i>Calle canteras bajas nuebas</li>
+                    <li><i class="fa-solid fa-mobile-button"></i>Numero: 688434592</li>
+                    <li><i class="fa-solid fa-envelope"></i>Correo: hidalgoquinterogabriel@gmail.com</li>
+                </ul>
+            </article>
+        </article>
     </footer>
-</html>  
+
+    <script src="script.js"></script>
+</body>
+</html>
