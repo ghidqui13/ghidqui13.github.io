@@ -174,7 +174,7 @@ Sobre mi
     font-weight: bold;
     border-radius: 5px;
 }
-/* SECCION S K I L L S */
+/* SKILLS */
 .skills{
     background-color: #252A2E;
     color: #fff;
@@ -239,7 +239,7 @@ Sobre mi
     right: -15px;
     font-size: 14px;
 }
-/* Estas clases se agregaran dinamicamente mediante javascript */
+/* Agregacion javascript */
 .skills .skill .javascript{
     width: 0%;
     animation: 2s javascript forwards;
@@ -285,7 +285,7 @@ Sobre mi
     100%{width: 55%;}
 }
 
-/* SECCION CURRICULUM */
+/*CURRICULUM */
 .curriculum{
     background-color: #1e2326;
     color: #fff;
@@ -426,14 +426,14 @@ Sobre mi
     left: 0;
     width: 0;
     height: 100%;
-    background-color: #1c66b6;
+    background-color: #1CB698;
     z-index: -1;
     transition: 1s;
 }
 .contacto button:hover .overlay{
     width: 100%;
 }
-/* Footer */
+/* FOOTER */
 footer{
     background-color: #252A2E;
     color: #fff;
@@ -497,7 +497,7 @@ footer .info ul li i{
     display: inline-block;
     margin-right: 20px;
 }
-/* SECCION RESPONSIVE */
+/*RESPONSIVE */
 @media screen and (max-width:980px){
     nav{
         display: none;
